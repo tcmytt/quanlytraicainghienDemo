@@ -1,0 +1,26 @@
+Khởi tạo & cài đặt thư viện:
+Đảm bảo đã cài React, TypeScript, React Bootstrap, Bootstrap (CDN), React Hook Form, Redux Toolkit, React Icons.
+
+Cấu hình Bootstrap CDN:
+Thêm vào public/index.html.
+
+Tạo các thư mục:
+Đảm bảo đủ các folder như trên.
+
+Tạo các component tái sử dụng:
+FormInput, SelectInput, DatePickerInput, Table, PopupConfirm, Pagination, Header, Sidebar, v.v.
+
+Tạo Redux store:
+Slice cho phân quyền, slice cho từng module (dùng dữ liệu fake).
+Tích hợp store vào app.
+
+Tạo các trang chính:
+HomePage: Thống kê, thông báo, 8 ô chức năng.
+Trang cho từng module: Hồ sơ, Quân trang, Tiền lưu ký, Điều trị, Giáo dục, Đào tạo nghề, Lao động trị liệu, Thăm gặp.
+
+Tích hợp chức năng từng module:
+Tìm kiếm, lọc, thêm/sửa/xóa (popup), phân trang, xuất dữ liệu.
+Dùng dữ liệu fake từ src/fakedata/.
+
+Phân quyền:
+Xây dựng logic phân quyền, ẩn/hiện chức năng theo vai trò.
