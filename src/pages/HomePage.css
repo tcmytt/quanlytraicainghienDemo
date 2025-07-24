@@ -1,0 +1,147 @@
+.homepage-main {
+    width: 100%;
+    background: #f5f5f5;
+    min-height: 600px;
+    padding: 32px 0 48px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.homepage-grid-container {
+    width: 100%;
+    max-width: 1400px;
+    display: grid;
+    grid-template-rows: auto;
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.grid-5-cols {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.homepage-grid-item {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    padding: 20px 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100px;
+}
+
+.stat-box {
+    min-height: 140px;
+    background: #e3eafc;
+}
+
+.stat-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1a237e;
+    margin-bottom: 8px;
+}
+
+.stat-content {
+    font-size: 16px;
+    color: #333;
+}
+
+.notice-box {
+    min-height: 140px;
+    background: #fffde7;
+}
+
+.notice-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #b71c1c;
+    margin-bottom: 8px;
+}
+
+.notice-content {
+    font-size: 16px;
+    color: #b71c1c;
+}
+
+.stats-vertical-box {
+    min-height: 140px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: transparent;
+}
+
+.stat-vertical-item {
+    border-radius: 8px;
+    color: #fff;
+    padding: 10px 0 10px 16px;
+    margin-bottom: 4px;
+    font-size: 18px;
+    font-weight: 600;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.07);
+}
+
+.stat-value {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.stat-label {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.feature-grid {
+    margin-top: 16px;
+    margin-bottom: 0;
+}
+
+.feature-box {
+    min-height: 120px;
+    border: 2px solid #b71c1c;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: box-shadow 0.2s, border 0.2s;
+    margin: 0;
+}
+
+.feature-box:hover {
+    box-shadow: 0 4px 16px rgba(183, 28, 28, 0.12);
+    border-color: #f57c00;
+}
+
+.empty-box {
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    min-height: 0;
+    padding: 0;
+}
+
+@media (max-width: 1200px) {
+    .homepage-grid-container {
+        max-width: 98vw;
+    }
+}
+
+@media (max-width: 900px) {
+    .grid-5-cols {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .grid-5-cols {
+        grid-template-columns: 1fr;
+    }
+}
